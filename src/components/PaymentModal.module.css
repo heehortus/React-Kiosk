@@ -1,0 +1,197 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.modal {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 28rem;
+  margin: 1rem;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.description {
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.orderSummary {
+  background: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.orderSummaryTitle {
+  margin-bottom: 0.75rem;
+  color: #374151;
+}
+
+.orderItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.orderTotal {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.totalRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.totalPrice {
+  color: #3b82f6;
+}
+
+.paymentSection {
+
+}
+
+.paymentTitle {
+  margin-bottom: 0.75rem;
+  color: #374151;
+}
+
+.paymentOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.paymentOption {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.paymentOption:hover {
+  background: #f8fafc;
+}
+
+.radioInput {
+  margin: 0;
+}
+
+.paymentLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  flex: 1;
+}
+
+.paymentIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.cardIcon {
+  color: #3b82f6;
+}
+
+.cashIcon {
+  color: #059669;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.button {
+  flex: 1;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.cancelButton {
+  background: white;
+  color: #374151;
+  border: 1px solid #d1d5db;
+}
+
+.cancelButton:hover {
+  background: #f9fafb;
+}
+
+.payButton {
+  background: #3b82f6;
+  color: white;
+}
+
+.payButton:hover {
+  background: #2563eb;
+}
+
+.payButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.processingContent {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.spinner {
+  width: 1rem;
+  height: 1rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
